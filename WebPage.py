@@ -2,6 +2,7 @@
 from datetime import datetime
 
 import numpy as np
+import sklearn
 import pandas as pd
 import streamlit as st
 import pickle
