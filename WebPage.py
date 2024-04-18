@@ -2,9 +2,9 @@
 from datetime import datetime
 
 import numpy as np
+import pandas as pd
 import streamlit as st
-
-import streamlit as st
+import pickle
 st.set_page_config(
     page_title="GaryChern",
     page_icon="📊",
@@ -144,7 +144,6 @@ if submit_button:
     Results = None
     st.subheader("")
 
-    import pandas as pd
 
     # 创建一个包含获取的数据的字典
     data = {
@@ -184,7 +183,6 @@ if submit_button:
     # # 显示 DataFrame
     # st.write(df_data)
     #引入机器学习模型进行预测
-    import pickle
     # 加载模型
     with open('voting_classifier.pkl', 'rb') as f:
         model = pickle.load(f)
