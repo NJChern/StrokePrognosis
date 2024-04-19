@@ -89,7 +89,7 @@ with col1:
         selected_Smoking_number = 0
 
     st.subheader("Hematological Examination Data")
-    selected_WBC = st.number_input('WBC(Body Mass Index)', min_value=0.0, max_value=50.0, step=0.1)
+    selected_WBC = st.number_input('WBC(Body Mass Index)-mol', min_value=0.0, max_value=40.0, step=0.1)
     selected_RBC = st.slider('RBC(Red Blood Cell Count)', min_value=0.0, max_value=50.0, step=0.1)
     selected_Hb = st.slider('Hb(Hemoglobin)', min_value=0.0, max_value=50.0, step=0.1)
     selected_PLT = st.slider('PLT(Platelet Count)', min_value=0.0, max_value=50.0, step=0.1)
