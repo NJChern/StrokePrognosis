@@ -196,8 +196,11 @@ if submit_button:
     # 提取出第二个类别的概率值
     probability_UnfavorableOutcomes = prediction[0][1]
     if probability_UnfavorableOutcomes >= 0.435548:
-        st.subheader("Results Of Stroke Prognosis is UnfavorableOutcomes!"+"And this risk probability has reached:"+str("{:.3f}".format(probability_UnfavorableOutcomes)))
+        temp = probability_UnfavorableOutcomes*((1-0.435548)/0.5)
+        st.subheader("Results Of Stroke Prognosis is UnfavorableOutcomes!"+"And this risk probability has reached:"+str("{:.3f}".format(temp)))
+        # st.subheader("Results Of Stroke Prognosis is UnfavorableOutcomes!"+"And this risk probability has reached:"+str("{:.3f}".format(probability_UnfavorableOutcomes)))
     else:
+        temp = probability_FavorableOutcomes * (0.5 / 0.435548)
         st.subheader("Results Of Stroke Prognosis is FavorableOutcomes!"+"And this risk probability has reached:"+str("{:.3f}".format(probability_FavorableOutcomes)))
 
     # 将字典转换为 DataFrame
