@@ -90,10 +90,10 @@ with col1:
 
     st.subheader("Hematological Examination Data")
     selected_WBC = st.number_input('WBC(Body Mass Index)-(×10^9/L)', min_value=0.0, max_value=40.0, step=0.1)
-    selected_RBC = st.slider('RBC(Red Blood Cell Count)', min_value=0.0, max_value=100.0, step=0.1)
-    selected_Hb = st.slider('Hb(Hemoglobin)', min_value=0.0, max_value=50.0, step=0.1)
-    selected_PLT = st.slider('PLT(Platelet Count)', min_value=0.0, max_value=50.0, step=0.1)
-    selected_FIB = st.slider('FIB(Fibrinogen)', min_value=0.0, max_value=50.0, step=0.1)
+    selected_RBC = st.slider('RBC(Red Blood Cell Count)-(×10^12/L)', min_value=0.0, max_value=100.0, step=0.1)
+    selected_Hb = st.slider('Hb(Hemoglobin)-(g/dL)', min_value=0.0, max_value=50.0, step=0.1)
+    selected_PLT = st.slider('PLT(Platelet Count)-(×10^9/L)', min_value=0.0, max_value=50.0, step=0.1)
+    selected_FIB = st.slider('FIB(Fibrinogen)-(mg/dL)', min_value=0.0, max_value=50.0, step=0.1)
 
 
 
@@ -105,25 +105,25 @@ with col2:
     # image ='./Images/Stroke_infographic_risk_of_stroke_QBI.png'
     # st.image(image, caption=None, use_column_width=True, output_format='auto')
     st.subheader("Inflammation Markers")
-    selected_CRP = st.slider('CRP(C-Reactive Protein)', min_value=0.0, max_value=50.0, step=0.1)
-    selected_ESR = st.slider('ESR(Erythrocyte Sedimentation Rate)', min_value=0.0, max_value=50.0, step=0.1)
+    selected_CRP = st.slider('CRP(C-Reactive Protein)-(mg/dL)', min_value=0.0, max_value=50.0, step=0.1)
+    selected_ESR = st.slider('ESR(Erythrocyte Sedimentation Rate)-(mm/h)', min_value=0.0, max_value=50.0, step=0.1)
 
     st.subheader("Renal and Liver Function Markers")
-    selected_BUN = st.number_input('Blood Urea Nitrogen', min_value=0.0, max_value=50.0, step=0.1)
-    selected_Scr = st.number_input('Serum Creatinine', min_value=0.0, max_value=50.0, step=0.1)
-    selected_AST = st.number_input('Aspartate Aminotransferase', min_value=0.0, max_value=50.0, step=0.1)
-    selected_ALT = st.number_input('Alanine Aminotransferase', min_value=0.0, max_value=50.0, step=0.1)
-    selected_Albumin = st.number_input('Albumin', min_value=0.0, max_value=50.0, step=0.1)
-    selected_TotolProtein = st.number_input('Total protein', min_value=0.0, max_value=50.0, step=0.1)
+    selected_BUN = st.number_input('BUN(Blood Urea Nitrogen)-(mg/dL)', min_value=0.0, max_value=50.0, step=0.1)
+    selected_Scr = st.number_input('Scr(Serum Creatinine)-(mg/dL)', min_value=0.0, max_value=50.0, step=0.1)
+    selected_AST = st.number_input('ALT(Aspartate Aminotransferase)-(U/L)', min_value=0.0, max_value=50.0, step=0.1)
+    selected_ALT = st.number_input('AST(Alanine Aminotransferase)-(U/L)', min_value=0.0, max_value=50.0, step=0.1)
+    selected_Albumin = st.number_input('Albumin-(g/dL)', min_value=0.0, max_value=50.0, step=0.1)
+    selected_TotolProtein = st.number_input('Total protein-(g/dL)', min_value=0.0, max_value=50.0, step=0.1)
 
     st.subheader("Blood Lipid and Blood Glucose Indicators")
-    selected_TC = st.slider('Total Cholesterol', min_value=0.0, max_value=50.0, step=0.1)
-    selected_TG = st.slider('Triglyceride', min_value=0.0, max_value=50.0, step=0.1)
-    selected_HDL_C = st.slider('High-Density Lipoprotein Cholesterol', min_value=0.0, max_value=50.0, step=0.1)
-    selected_LDL_C = st.slider('Low-Density Lipoprotein Cholesterol', min_value=0.0, max_value=50.0, step=0.1)
-    selected_FBG = st.slider('Fasting Plasma Glucose', min_value=0.0, max_value=50.0, step=0.1)
+    selected_TC = st.slider('TC(Total Cholesterol)-(mg/dL)', min_value=0.0, max_value=50.0, step=0.1)
+    selected_TG = st.slider('TG(Triglyceride)-(mg/dL)', min_value=0.0, max_value=50.0, step=0.1)
+    selected_HDL_C = st.slider('HDL-C(High-Density Lipoprotein Cholesterol)-(mg/dL)', min_value=0.0, max_value=50.0, step=0.1)
+    selected_LDL_C = st.slider('LDL-C(Low-Density Lipoprotein Cholesterol)-(mg/dL)', min_value=0.0, max_value=50.0, step=0.1)
+    selected_FBG = st.slider('FBG(Fasting Plasma Glucose)-(mg/dL)', min_value=0.0, max_value=50.0, step=0.1)
     #selected_HbA1c = st.number_input('Hemoglobin A1c', min_value=0.0, max_value=50.0, step=0.1)
-    selected_HbA1c = st.slider('HbA1c(Hemoglobin A1c)', 0.0, 50.0, value=None, step=0.1)
+    selected_HbA1c = st.slider('HbA1c(Hemoglobin A1c)-(%)', 0.0, 50.0, value=None, step=0.1)
 
     st.subheader("StrokeEtiology")
     options = ['LAA', 'SAO', 'CE', 'Other determined', 'Undetermined']
