@@ -92,8 +92,8 @@ with col1:
     selected_WBC = st.number_input('WBC(Body Mass Index)-(×10^9/L)', min_value=0.0, max_value=40.0, step=0.1)
     selected_RBC = st.slider('RBC(Red Blood Cell Count)-(×10^12/L)', min_value=0.0, max_value=10.0, step=0.1)
     selected_Hb = st.slider('Hb(Hemoglobin)-(g/dL)', min_value=0.0, max_value=20.0, step=0.1)
-    selected_PLT = st.slider('PLT(Platelet Count)-(×10^9/L)', min_value=0.0, max_value=1000.0, step=1.0)
-    selected_FIB = st.slider('FIB(Fibrinogen)-(mg/dL)', min_value=0.0, max_value=1000.0, step=1.0)
+    selected_PLT = st.slider('PLT(Platelet Count)-(×10^9/L)', min_value=0.0, max_value=999.0, step=1.0)
+    selected_FIB = st.slider('FIB(Fibrinogen)-(mg/dL)', min_value=0.0, max_value=999.0, step=1.0)
 
 
 
