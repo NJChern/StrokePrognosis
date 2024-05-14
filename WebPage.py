@@ -111,8 +111,8 @@ with col2:
     st.subheader("Renal and Liver Function Markers")
     selected_BUN = st.number_input('BUN(Blood Urea Nitrogen)-(mg/dL)', min_value=0.0, max_value=100.0, step=0.1)
     selected_Scr = st.number_input('Scr(Serum Creatinine)-(mg/dL)', min_value=0.0, max_value=20.0, step=0.1)
-    selected_AST = st.number_input('ALT(Aspartate Aminotransferase)-(U/L)', min_value=0.0, max_value=300.0, step=1)
-    selected_ALT = st.number_input('AST(Alanine Aminotransferase)-(U/L)', min_value=0.0, max_value=200.0, step=1)
+    selected_AST = st.number_input('ALT(Aspartate Aminotransferase)-(U/L)', min_value=0.0, max_value=300.0, step=1.0)
+    selected_ALT = st.number_input('AST(Alanine Aminotransferase)-(U/L)', min_value=0.0, max_value=200.0, step=1.0)
     selected_Albumin = st.number_input('Albumin-(g/dL)', min_value=0.0, max_value=10.0, step=0.1)
     selected_TotolProtein = st.number_input('Total protein-(g/dL)', min_value=0.0, max_value=10.0, step=0.1)
 
